@@ -102,6 +102,18 @@ nav li:hover a {
   height: 100vh;
 }
 
+footer {
+  padding: 4rem 5rem;
+  min-height: 20vh;
+  background-color: #f7efd2;
+}
+
+.footer-title {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: 'Palatino Linotype';
+}
+
 @media screen and (max-width: 695px) {
   .divHeader {
     padding: 2rem;

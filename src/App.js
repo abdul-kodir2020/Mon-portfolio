@@ -5,6 +5,7 @@ import Accueil from './pages/Accueil';
 import Contact from './pages/Contact';
 import APropos from './pages/APropos';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/a-propos" element={<APropos />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

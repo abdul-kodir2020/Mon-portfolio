@@ -24,29 +24,30 @@ p {
 .divHeader {
   padding: 4rem 5rem;
   height: 100vh;
-  
-  color: black;
   z-index: 20;
+  transition: all 1s ease;
+  overflow: hidden;
 }
 
 .description {
-  font-size: 1.5rem;
+  font-size: 1.5vw;
 }
 
 .divHeader div p {
   font-family: 'Palatino Linotype';
+  transition: all 0.5s ease;
 }
 
 .big {
   font-weight: bold;
-  font-size: 10rem;
+  font-size: 8vw;
   line-height: 100%;
 }
 
 .absolute {
   position: absolute;
   top: 60px;
-  width: 100vw;
+  width: 100%;
 }
 
 nav {
@@ -95,4 +96,42 @@ nav li:hover a {
 
 .section {
   height: 100vh;
+}
+
+@media screen and (max-width: 695px) {
+  .divHeader {
+    padding: 2rem;
+  }
+  nav {
+    flex-direction: column;
+    padding: 0 3rem;
+  }
+
+  nav ul {
+    gap: 2rem;
+    padding-top: 20px;
+    justify-content: center;
+  }
+
+  .site-title {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .big {
+    font-weight: bold;
+    font-size: 20vw;
+    line-height: 100%;
+    margin-bottom: 50px;
+  }
+
+  .description {
+    font-size: 4vw;
+  }
+
+  .absolute {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+  }
 }

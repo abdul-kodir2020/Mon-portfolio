@@ -5,23 +5,17 @@ function Header() {
     <div className="absolute">
       <nav>
         <Link to="/" className="site-title">
-          Mon Portflolio <span className='point'>.</span>
+          Mon Portflolio <span className="point">.</span>
         </Link>
         <ul>
           <li className="nav-link active">
-            <Link to="/">
-              Accueil
-            </Link>
+            <Link to="/">Accueil</Link>
           </li>
           <li className="nav-link">
-            <Link to="/a-propos">
-              A Propos
-            </Link>
+            <Link to="/a-propos">A Propos</Link>
           </li>
           <li className="nav-link">
-            <Link to="/contact">
-              Contact
-            </Link>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </nav>

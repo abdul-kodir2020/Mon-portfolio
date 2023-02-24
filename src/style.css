@@ -141,6 +141,16 @@ footer ul li:hover a {
   color: black;
 }
 
+.section {
+  background-image: url('./images/josh.jpg');
+  height: 30vh;
+  width: 100%;
+  background-size: cover;
+  object-fit: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
 @media screen and (max-width: 695px) {
   .divHeader {
     padding: 2rem;

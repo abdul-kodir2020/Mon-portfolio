@@ -58,7 +58,7 @@ function Accueil() {
           >
             Bonjour,
             <br />
-            Vous
+            Vous.
           </p>
           <p
             className="mt-5 description text-center"

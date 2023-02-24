@@ -121,21 +121,21 @@ footer ul {
   margin-top: 20px;
 }
 
-footer ul li{
+footer ul li {
   list-style: none;
   border-bottom: 1px solid rgb(148, 148, 148);
 }
 
-footer ul li:hover{
+footer ul li:hover {
   border-bottom: 1px solid black;
 }
 
-footer ul li a{
+footer ul li a {
   text-decoration: none;
   color: rgb(148, 148, 148);
 }
 
-footer ul li:hover a{
+footer ul li:hover a {
   color: black;
 }
 
@@ -174,5 +174,17 @@ footer ul li:hover a{
     position: absolute;
     top: 20px;
     width: 100%;
+  }
+
+  footer {
+    padding: 4rem 2rem;
+    min-height: 20vh;
+    background-color: #f7efd2;
+  }
+
+  footer ul {
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 30%;
   }
 }

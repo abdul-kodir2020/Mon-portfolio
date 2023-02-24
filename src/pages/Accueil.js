@@ -34,11 +34,9 @@ function Accueil() {
   }, []);
 
   const handleScroll = (e) => {
-    console.log(window.scrollY + ' : ' + window.innerHeight / 5);
     if (window.scrollY >= window.innerHeight / 5) {
       setBackgroundColor('black');
       setColor('#f7efd2');
-      console.log(backgroundColor);
     } else {
       setBackgroundColor('#f7efd2');
       setColor('black');

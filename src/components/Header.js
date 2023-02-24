@@ -1,8 +1,26 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 function Header() {
+  const [position, setPosition] = useState('');
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+  }, [position]);
+
+  React.useEffect(() => {
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const handleScroll = (e) => {
+    if (window.scrollY >= window.innerHeight / 5) {
+    } else {
+    }
+  };
+
   return (
-    <div className="absolute">
+    <div className="absolute" style={{ position: position }}>
       <nav>
         <Link to="/" className="site-title">
           Mon Portflolio <span className="point">.</span>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 function Header() {
-  const [position, setPosition] = useState('');
+  const [position, setPosition] = useState('absolute');
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -15,6 +15,7 @@ function Header() {
 
   const handleScroll = (e) => {
     if (window.scrollY >= window.innerHeight / 5) {
+      setPosition('sticky');
     } else {
     }
   };

@@ -2,10 +2,18 @@ import React, { useEffect, useState } from 'react';
 import { BsArrowDown } from 'react-icons/bs';
 
 function Accueil() {
-  const [backgroundColor, setBackgroundColor] = useState('black');
+  const [backgroundColor, setBackgroundColor] = useState('#F5F5F5');
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.onscroll = function () {
+      console.log(window.scrollY + ' : ' + window.innerHeight / 2);
+      if (window.scrollY >= window.innerHeight / 2) {
+        setBackgroundColor('black');
+        console.log(backgroundColor);
+      } else {
+        setBackgroundColore('black');
+      }
+    };
   }, []);
 
   React.useEffect(() => {
@@ -27,7 +35,7 @@ function Accueil() {
     <div>
       <div
         class="divHeader d-flex align-items-end"
-        style={{ color: backgroundColor }}
+        style={{ backgroundcolor: backgroundColor }}
       >
         <div className="col-sm-12">
           <p className="m-0 big">

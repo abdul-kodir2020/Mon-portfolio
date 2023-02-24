@@ -151,6 +151,17 @@ footer ul li:hover a {
   background-position: center;
 }
 
+.section1 {
+  background-image: url('./images/a-5-star-general-army-cat-officerportrait-of-a-highly-decorated-5-star-general-of-the-army-cat-of-903091549.png');
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  object-fit: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+
 @media screen and (max-width: 695px) {
   .divHeader {
     padding: 2rem;

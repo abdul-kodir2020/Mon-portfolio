@@ -81,6 +81,9 @@ function Accueil() {
       <div className="section">
         
       </div>
+      <div className='section1'>
+        
+      </div>
     </div>
   );
 }

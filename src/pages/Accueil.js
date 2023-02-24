@@ -13,16 +13,16 @@ function Accueil() {
 
   useEffect(() => {
     setTimeout(() => {
-      setTransform('translateX(0)')
-      setOpacity('1')
+      setTransform('translateX(0)');
+      setOpacity('1');
     }, 500);
     setTimeout(() => {
-      setTransform1('translateX(0)')
-      setOpacity1('1')
+      setTransform1('translateX(0)');
+      setOpacity1('1');
     }, 1000);
     setTimeout(() => {
-      setTransform2('translateY(0)')
-      setOpacity2('1')
+      setTransform2('translateY(0)');
+      setOpacity2('1');
     }, 1500);
     window.addEventListener('scroll', handleScroll);
   }, [backgroundColor]);
@@ -51,16 +51,28 @@ function Accueil() {
         class="divHeader d-flex align-items-end"
         style={{ backgroundColor: backgroundColor, color: color }}
       >
-        <div className="col-sm-12" style={{"transition": "all 0.5s ease"}}>
-          <p className="m-0 big text-center" style={{'transform':transform,"opacity":opacity,}}>
+        <div className="col-sm-12" style={{ transition: 'all 0.5s ease' }}>
+          <p
+            className="m-0 big text-center"
+            style={{ transform: transform, opacity: opacity }}
+          >
             Bonjour,
             <br />
-            Toi
+            Vous
           </p>
-          <p className="mt-5 description text-center" style={{'transform':transform1,"opacity":opacity1}}>
-            👋 Bienvenue sur mon portfolio, Je suis ravi de vous présenter mes réalisations, mes compétences et mon parcours professionnel à travers ce portfolio.
+          <p
+            className="mt-5 description text-center"
+            style={{ transform: transform1, opacity: opacity1 }}
+          >
+            👋 Bienvenue sur mon portfolio, Je suis ravi de vous présenter mes
+            réalisations, <br />
+            mes compétences et mon parcours professionnel à travers ce
+            portfolio.
           </p>
-          <p className="mt-5 text-center " style={{'transform':transform2,"opacity":opacity2}}>
+          <p
+            className="mt-5 text-center "
+            style={{ transform: transform2, opacity: opacity2 }}
+          >
             <BsArrowDown size={60} />
           </p>
         </div>

@@ -11,6 +11,8 @@ function Accueil() {
   const [transform2, setTransform2] = useState('translateY(-80px)');
   const [opacity2, setOpacity2] = useState('0');
 
+  const [position, setPosition] = useState('translateY(0)');
+
   useEffect(() => {
     setTimeout(() => {
       setTransform('translateX(0)');
@@ -35,6 +37,7 @@ function Accueil() {
 
   const handleScroll = (e) => {
     console.log(window.scrollY + ' : ' + window.innerHeight / 5);
+    setPosition('translateY(' + window.scrollY + 'px)');
     if (window.scrollY >= window.innerHeight / 5) {
       setBackgroundColor('black');
       setColor('#f7efd2');
@@ -51,7 +54,10 @@ function Accueil() {
         class="divHeader d-flex align-items-end"
         style={{ backgroundColor: backgroundColor, color: color }}
       >
-        <div className="col-sm-12" style={{ transition: 'all 0.5s ease' }}>
+        <div
+          className="col-sm-12 divTexte"
+          style={{ transform: position, transition: 'all 0.5s ease' }}
+        >
           <p
             className="m-0 big text-center"
             style={{ transform: transform, opacity: opacity }}

@@ -41,11 +41,24 @@ p {
 
 .big {
   font-weight: bold;
-  font-size: 8vw;
+  font-size: 3.5vw;
   line-height: 100%;
+  z-index: 800;
   color: #f7efd2;
-  text-shadow: 10px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000,
+  text-shadow: 6px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000,
     -1px -1px #000, 1px -1px #fff, -1px 1px #000;
+}
+
+.image{
+  background-image: url('./images/im.jpg');
+  background-size: cover;
+  object-fit: cover;
+  background-position: bottom;
+  background-color: #F0E4D7;
+  height:100%;
+  width:650px;
+  transform: rotate(2deg);
+  transition: all 0.5s ease
 }
 
 .absolute {
@@ -100,6 +113,10 @@ nav li:hover a {
   color: black;
 }
 
+.divTexte{
+  height: 80%;
+}
+
 .section {
   height: 100vh;
 }
@@ -142,29 +159,101 @@ footer ul li:hover a {
 }
 
 .section {
-  background-image: url('./images/josh.jpg');
-  height: 30vh;
-  width: 100%;
+  background-color:black;
   background-size: cover;
-  object-fit: cover;
-  background-attachment: fixed;
   background-position: center;
+  
+  height: 25vh;
+  width: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.section div{
+  height: 20vh;
+  width: 70%;
+  
+  border-radius: 10px;
+  font-family: 'Palatino Linotype';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section div span{
+  font-size: 4vw;
+  font-weight: bold;
+  color: white;
+}
+
+
 
 .section1 {
-  background-image: url('./images/a-5-star-general-army-cat-officerportrait-of-a-highly-decorated-5-star-general-of-the-army-cat-of-903091549.png');
+  background-image: url('./images/ordi2.jpg');
+  background-color: #68a498;
   height: 100vh;
-  width: 100%;
   background-size: cover;
   object-fit: cover;
   background-attachment: fixed;
   background-position: center;
+  color: white;
+}
+
+.section1 > div{
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.section2 {
+  background-image: url('./images/ordi1.jpg');
+  background-color: #68a498;
+  height: 100vh;
+  background-size: cover;
+  object-fit: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+}
+
+.section2 > div{
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.section3 {
+  background-image: url('./images/ordi3.jpg');
+  background-color: #68a498;
+  height: 100vh;
+  background-size: cover;
+  object-fit: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+}
+
+.section3 > div{
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.moi{
+  height: 95vh;
+  background-color: rgb(0, 0, 0);
+  border: 5px rgb(78, 65, 65);
+  border-style:dashed;
 }
 
 
-@media screen and (max-width: 695px) {
+@media screen and (max-width: 800px) {
   .divHeader {
     padding: 2rem;
+    align-items: center;
+  }
+
+  .divHeader p{
+    margin-top: 0;
   }
   nav {
     flex-direction: column;
@@ -183,9 +272,12 @@ footer ul li:hover a {
 
   .big {
     font-weight: bold;
-    font-size: 20vw;
+    font-size: 8vw;
     line-height: 100%;
     margin-bottom: 50px;
+    transform: translateX(500px);
+    text-shadow: 5px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000,
+    -1px -1px #000, 1px -1px #fff, -1px 1px #000;
   }
 
   .description {
@@ -208,5 +300,23 @@ footer ul li:hover a {
     flex-direction: column;
     gap: 1.5rem;
     width: 30%;
+  }
+
+  .image{
+    height: 50%;
+    width: 200px;
+  }
+
+  .section1,.section2,.section3{
+    background-position: left;
+  }
+
+  .divTexte > div{
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .divTexte > div p{
+    margin-top: 0 !important;
   }
 }

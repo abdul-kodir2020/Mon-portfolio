@@ -19,6 +19,8 @@ function Header() {
     } else {
       setPosition('');
     }
+
+    
   };
 
   return (
@@ -28,7 +30,7 @@ function Header() {
     >
       <nav>
         <Link to="/" className="site-title">
-          Mon Portflolio <span className="point">.</span>
+          Mon Portfolio <span className="point">.</span>
         </Link>
         <ul>
           <li className="nav-link active">

@@ -13,10 +13,18 @@
       format('svg');
 }
 
-h1,
-p {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+body{
+  font-family: 'Rowdies', cursive;
+}
+
+h1{
+  margin: 0;
+}
+h3{
+  border-bottom: #000 1px solid;
 }
 .point {
   color: red;
@@ -81,6 +89,10 @@ nav {
   font-family: 'Palatino Linotype';
 }
 
+.site-title:hover{
+  color: black;
+}
+
 nav ul {
   padding: 0;
   margin: 0;
@@ -88,6 +100,7 @@ nav ul {
   display: flex;
   gap: 2rem;
   font-size: 1rem;
+  font-family: 'Merriweather';
 }
 
 nav a {
@@ -124,13 +137,14 @@ nav li:hover a {
 footer {
   padding: 4rem 5rem;
   min-height: 20vh;
-  background-color: #f7efd2;
+  background-color: black;
 }
 
 .footer-title {
   text-decoration: none;
   font-size: 1.5rem;
   font-family: 'Palatino Linotype';
+  color: white;
 }
 
 footer ul {
@@ -188,7 +202,9 @@ footer ul li:hover a {
   color: white;
 }
 
-
+.divTexte > div p{
+  font-family: 'Merriweather';
+}
 
 .section1 {
   background-image: url('./images/ordi2.jpg');
@@ -199,11 +215,31 @@ footer ul li:hover a {
   background-attachment: fixed;
   background-position: center;
   color: white;
+  
 }
+
 
 .section1 > div{
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  padding-left: 10px;
+}
+
+.projet-number{
+  font-size: 200px;
+  color: black;
+  text-shadow: 6px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff,
+    -1px -1px #fff, 1px -1px #000, -1px 1px #fff;
+}
+
+.projet-info>p{
+  font-family: 'Merriweather';
+  font-size: 30px;
+
 }
 
 .section2 {
@@ -215,11 +251,18 @@ footer ul li:hover a {
   background-attachment: fixed;
   background-position: center;
   color: white;
+  
 }
 
 .section2 > div{
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+
+
 }
 
 .section3 {
@@ -235,14 +278,23 @@ footer ul li:hover a {
 
 .section3 > div{
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+
 }
 
 .moi{
-  height: 95vh;
-  background-color: rgb(0, 0, 0);
-  border: 5px rgb(78, 65, 65);
-  border-style:dashed;
+  min-height: 70vh;
+  background-color: #fcfcfc;
+  padding: 100px 0 100px 0;
+}
+
+.contact{
+  background-color: black;
+  padding: 50px 0 0 80px;
 }
 
 
@@ -293,7 +345,7 @@ footer ul li:hover a {
   footer {
     padding: 4rem 2rem;
     min-height: 20vh;
-    background-color: #f7efd2;
+    background-color: black;
   }
 
   footer ul {
@@ -318,5 +370,6 @@ footer ul li:hover a {
 
   .divTexte > div p{
     margin-top: 0 !important;
+    font-family: 'Merriweather';
   }
 }

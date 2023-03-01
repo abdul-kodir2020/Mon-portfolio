@@ -364,6 +364,7 @@ footer ul li:hover a {
     background-position: center;
     background-size:contain;
     object-fit: fill;
+    background-repeat: no-repeat;
   }
 
   .section2{

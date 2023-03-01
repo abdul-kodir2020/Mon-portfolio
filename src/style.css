@@ -361,7 +361,7 @@ footer ul li:hover a {
   }
 
   .section1,.section2,.section3{
-    background-position: right;
+    background-position: center;
     background-size:cover;
     object-fit: fill;
 

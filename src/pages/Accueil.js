@@ -108,7 +108,8 @@ function Accueil() {
               02
             </span>
             <p>
-              Mini projet fait pendant l'apprentissage de react
+             Clone de whatsapp avec la fonctionnalité méssagérie<br/>
+             firebase | react | bootstrap
             </p>
           </div>
         </div>

@@ -112,10 +112,11 @@ nav a {
   padding: 0 0.25rem;
 }
 
-nav li.active a {
+.nav-link .active{
   border-bottom: 2px solid;
   font-weight: bold;
 }
+
 
 nav li:hover {
   color: black;
@@ -160,7 +161,7 @@ footer ul li {
 }
 
 footer ul li:hover {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 
 footer ul li a {
@@ -169,7 +170,7 @@ footer ul li a {
 }
 
 footer ul li:hover a {
-  color: black;
+  color: white;
 }
 
 .section {
@@ -239,7 +240,6 @@ footer ul li:hover a {
 .projet-info>p{
   font-family: 'Merriweather';
   font-size: 30px;
-
 }
 
 .section2 {
@@ -296,6 +296,8 @@ footer ul li:hover a {
   background-color: black;
   padding: 50px 0 0 80px;
 }
+
+
 
 
 @media screen and (max-width: 800px) {
@@ -372,4 +374,17 @@ footer ul li:hover a {
     margin-top: 0 !important;
     font-family: 'Merriweather';
   }
+
+  .contact{
+    background-color: black;
+    padding: 4rem 2rem;
+  }
+  .projet-number{
+  font-size: 100px;
+
+  }
+.projet-info>p{
+  font-family: 'Merriweather';
+  font-size: 23px;
+}
 }

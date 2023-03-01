@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-scroll'
 function Header() {
   const [position, setPosition] = useState({});
 
@@ -20,6 +20,8 @@ function Header() {
       setPosition('');
     }
 
+    const li = document.querySelectorAll(".nav-link")
+
     
   };
 
@@ -29,21 +31,21 @@ function Header() {
       style={{ position: position.position, top: position.top }}
     >
       <nav>
-        <Link to="/" className="site-title">
+        <Link to="#"  className="site-title">
           Mon Portfolio <span className="point">.</span>
         </Link>
         <ul>
-          <li className="nav-link active">
-            <Link to="/">Accueil</Link>
+          <li className="nav-link">
+            <Link to="home" spy={true} smooth={true} offset={-50} duration={300}>Accueil</Link>
           </li>
           <li className="nav-link">
-            <Link to="/a-propos">Projets</Link>
+            <Link to="projets" spy={true} smooth={true} offset={0} duration={300}>Projets</Link>
           </li>
           <li className="nav-link">
-            <Link to="/a-propos">Moi</Link>
+            <Link to="moi" spy={true} smooth={true} offset={50} duration={300}>Moi</Link>
           </li>
           <li className="nav-link">
-            <Link to="/contact">Contact</Link>
+            <Link to="contact" spy={true} smooth={true} offset={50} duration={300}>Contact</Link>
           </li>
         </ul>
       </nav>

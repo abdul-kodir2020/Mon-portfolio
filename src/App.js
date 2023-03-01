@@ -11,11 +11,7 @@ export default function App() {
   return (
     <div>
       <Header />
-      <Routes>
-        <Route path="/" element={<Accueil />} />
-        <Route path="/a-propos" element={<APropos />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <Accueil/>
       <Footer />
     </div>
   );

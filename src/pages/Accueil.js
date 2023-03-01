@@ -50,6 +50,7 @@ function Accueil() {
       <div
         className="divHeader d-flex align-items-end"
         style={{ backgroundColor: "#f7efd2"}}
+        id='home'
       >
         <div
           className="col-sm-12 divTexte d-flex flex-column justify-content-between align-items-center"
@@ -88,45 +89,46 @@ function Accueil() {
           </div>
         </div>
       </div>
-      
-      <div className='section1'>
-        <div className='col-md-6 col-sm-12'>
-          <div className='projet-info'>
-            <span className='projet-number'>
-              01
-            </span>
-            <p>
-              Mini projet fait pendant l'apprentissage de react
-            </p>
+      <div id='projets'>
+        {/* <div className='section1' >
+          <div className='col-md-6 col-sm-12 px-5'>
+            <div className='projet-info'>
+              <span className='projet-number'>
+                01
+              </span>
+              <p>
+                Mini projet fait pendant l'apprentissage de react
+              </p>
+            </div>
+          </div>
+        </div> */}
+        <div className='section2'>
+          <div className='col-md-6 col-sm-12 px-5'>
+            <div className='projet-info'>
+              <span className='projet-number'>
+                01
+              </span>
+              <p>
+              Clone de whatsapp avec la fonctionnalité méssagérie<br/>
+              firebase | react | bootstrap
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div className='section2'>
-        <div className='col-md-6 col-sm-12'>
-          <div className='projet-info'>
-            <span className='projet-number'>
-              02
-            </span>
-            <p>
-             Clone de whatsapp avec la fonctionnalité méssagérie<br/>
-             firebase | react | bootstrap
-            </p>
+        {/* <div className='section3'>
+          <div className='col-md-6 col-sm-12 px-5'>
+            <div className='projet-info'>
+              <span className='projet-number'>
+                03
+              </span>
+              <p>
+                Mini projet fait pendant l'apprentissage de react
+              </p>
+            </div>
           </div>
-        </div>
+        </div> */}
       </div>
-      <div className='section3'>
-        <div className='col-md-6 col-sm-12'>
-          <div className='projet-info'>
-            <span className='projet-number'>
-              03
-            </span>
-            <p>
-              Mini projet fait pendant l'apprentissage de react
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className='moi'>
+      <div className='moi' id='moi'>
         <div className='container'>
           <h3> A propos de moi</h3>
           <div className='row mb-5'>
@@ -247,7 +249,7 @@ function Accueil() {
           </div>
         </div>
       </div>
-      <div className='contact text-white mb-0'>
+      <div className='contact text-white mb-0' id='contact'>
         <div className=''>
           
           <h1>Voulez-vous plus d'informations sur moi ?</h1>

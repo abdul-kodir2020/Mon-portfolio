@@ -361,14 +361,15 @@ footer ul li:hover a {
   }
 
   .section1,.section2,.section3{
-    background-position: center;
-    background-size:contain;
+    background-position: right;
+    background-size:cover;
     object-fit: fill;
-    background-repeat: no-repeat;
+
+
   }
 
   .section2{
-    background-image: url('./images/ordi1b.jpg');
+    background-image: url('./images/ordi1c.jpg');
 
   }
 

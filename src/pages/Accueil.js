@@ -112,6 +112,7 @@ function Accueil() {
               Clone de whatsapp avec la fonctionnalité méssagérie<br/>
               firebase | react | bootstrap
               </p>
+              <a type="button" href="https://clone1whatsapp.netlify.app/" target='_blank' class="btn btn-outline-light">voir le projet</a>
             </div>
           </div>
         </div>

@@ -362,8 +362,14 @@ footer ul li:hover a {
   }
 
   .section1,.section2,.section3{
-    background-position: bottom;
+    background-position: left;
     background-size: cover;
+    object-fit: fill;
+  }
+
+  .section2{
+    background-image: url('./images/ordi1b.jpg');
+
   }
 
   .divTexte > div{

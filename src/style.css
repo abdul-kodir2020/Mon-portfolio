@@ -265,7 +265,7 @@ footer ul li:hover a {
 }
 
 .section3 {
-  background-image: url('./images/ordi3.jpg');
+  background-image: url('./images/soft.jpg');
   background-color: #68a498;
   height: 100vh;
   background-size: cover;
@@ -365,12 +365,14 @@ footer ul li:hover a {
     background-size:cover;
     object-fit: fill;
 
-
   }
 
   .section2{
     background-image: url('./images/ordi1c.jpg');
+  }
 
+  .section3{
+    background-image: url('./images/soft1.jpg');
   }
 
   .divTexte > div{
@@ -391,8 +393,8 @@ footer ul li:hover a {
   font-size: 100px;
 
   }
-.projet-info>p{
-  font-family: 'Merriweather';
-  font-size: 23px;
-}
+  .projet-info>p{
+    font-family: 'Merriweather';
+    font-size: 23px;
+  }
 }

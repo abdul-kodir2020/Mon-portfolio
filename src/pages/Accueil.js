@@ -109,25 +109,28 @@ function Accueil() {
                 01
               </span>
               <p>
-              Clone de whatsapp avec la fonctionnalité méssagérie<br/>
+              App web simple de méssagérie<br/>
               firebase | react | bootstrap
               </p>
               <a type="button" href="https://clone1whatsapp.netlify.app/" target='_blank' class="btn btn-outline-light">voir le projet</a>
             </div>
           </div>
         </div>
-        {/* <div className='section3'>
+        <div className='section3'>
           <div className='col-md-6 col-sm-12 px-5'>
             <div className='projet-info'>
               <span className='projet-number'>
-                03
+                02
               </span>
               <p>
-                Mini projet fait pendant l'apprentissage de react
+              Site web de la startup softArtisan<br/>
+              Fait en équipe<br/>
+              PHP | Laravel | bootstrap | Mysql
               </p>
+              <a type="button" href="https://softartisan.net/fr" target='_blank' class="btn btn-outline-light">voir le projet</a>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
       <div className='moi' id='moi'>
         <div className='container'>
